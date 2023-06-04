@@ -1,6 +1,5 @@
 # Vision Transformer
-![image](https://github.com/AICODER009/vision_transformer/assets/133597851/ff98da26-5eff-4083-a747-03a28deca900)
-Overview of the model: we split an image into fixed-size patches, linearly embed each of them, add position embeddings, and feed the resulting sequence of vectors to a standard Transformer encoder. In order to perform classification, we use the standard approach of adding an extra learnable "classification token" to the sequence.
+
 ``` ruby
 # 1. Create a ViT class that inherits from nn.Module
 class ViT(nn.Module):
@@ -85,4 +84,8 @@ class ViT(nn.Module):
 
         return x
  ```
+ ![image](https://github.com/AICODER009/vision_transformer/assets/133597851/ff98da26-5eff-4083-a747-03a28deca900)
+ 
+Overview of the model: we split an image into fixed-size patches, linearly embed each of them, add position embeddings, and feed the resulting sequence of vectors to a standard Transformer encoder. In order to perform classification, we use the standard approach of adding an extra learnable "classification token" to the sequence.
+
  Source: [ViT paper](https://arxiv.org/abs/2010.11929)
